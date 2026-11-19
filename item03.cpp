@@ -92,6 +92,6 @@ int main()
     }
 
     static_assert(std::is_same_v<decltype(returnsName()), int>);
-    static_assert(std::is_same_v<decltype(returnsParens()), int&&>);
+    static_assert(std::is_same_v<decltype(returnsParens()), int&>);
 
 }
