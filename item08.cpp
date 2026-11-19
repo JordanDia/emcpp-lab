@@ -37,6 +37,6 @@ int main()
 
     assert(g(0) == ReturnType::VoidPtr); // 0 counts as nullptr
     assert(call(g, nullptr) == ReturnType::VoidPtr);
-    call(g, 0); // error: P is int, can't convert int to int*
-    call(g, NULL); // same error
+    // call(g, 0); // error: P is int, can't convert int to int*
+    // call(g, NULL); // same error
 }
